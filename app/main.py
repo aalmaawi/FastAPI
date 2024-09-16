@@ -52,7 +52,7 @@ def get_posts():
     # posts = cursor.execute('SELECT * FROM posts') 
     # posts = cursor.execute('CREATE TABLE fastapitable(id SERIAL PRIMARY KEY NOT NULL, table_name VARCHAR NOT NULL)')
     
-    posts = cursor.execute('SELECT * FROM public.posts')
+    posts = cursor.execute('SELECT * FROM posts')
     # posts = cursor.fetchall()
     print(posts)
     return{"data": my_posts}
